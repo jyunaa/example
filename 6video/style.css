@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+
+body{background: #212835;font-size: 15px;}
+
+.video_wrap{height: 100vh;width: 1400px;margin: 0 auto;}
+
+.main_container{padding: 25px; padding-top: 32px;}
+
+/* trends */
+
+.trends{display: flex;justify-content: flex-end;}
+
+.trends #play-all{color: #fff;background-color: #fa3a2a;width: 95px;padding: 10px 30px;border-radius: 20px;display: flex;align-items: center;}
+
+/* fonstawesome icon 변환 */
+.trends #play-all i{margin-right: 16px;}
+
+.trends #play-all i.fa-play{display: none;}
+.trends #play-all.on i.fa-play{display: block;}
+
+.trends #play-all i.fa-pause{display: block;}
+.trends #play-all.on i.fa-pause{display: none;}
+
+.trends #play-all em.play-all{font-style: normal;}
+
+/* video */
+
+.videos{display: flex;flex-wrap: wrap;}
+
+.videos .video{width: 23%;margin: 1%;border-radius: 4px;overflow: hidden;position: relative;padding-top: 9%;}
+
+.videos .video .video-time{position: absolute;right: 6px;top: 65px;background: rgba(0,0,0,0.5);font-size: 12px;color: white;padding: 8px;border-radius: 15px;z-index: 20;transition: 0.3s;}
+
+.videos .video:hover .video-time{opacity: 0;}
+
+.videos .video video{width: 100%;position: absolute;left: 0;top: 0;transition: 0.3s;}
+
+.videos .video:hover video{transform: scale(1.5);transform-origin: center top;z-index: 30;}
+
+.videos .video .video-content{background: #fff;color: #808080;padding: 15px 10px 0;position: relative;z-index: 20;}
+
+
+.videos .video .view{background-color: #fff;font-size: 13px;padding: 10px;position: relative;z-index: 20;}
